@@ -33,3 +33,14 @@ function alternar() {
     var elemento = document.getElementById("titulo02")
     elemento.classList.toggle("destaque")
 }
+
+function adicionarTexto() {
+    /*Cria um elemento p no HTML como a seguir: <p> Novo paragrafo criado com JS*/
+    var novo = document.createElement("p")
+    novo.innerText = "Novo parágrafo criado com JS"
+    novo.id = "paragrafo"
+
+    /*Depois de criar o elemento vamos colocar o elemento p na div container */
+    var container = document.getElementById("container")
+    container.appendChild(novo)
+}
