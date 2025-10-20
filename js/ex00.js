@@ -18,9 +18,18 @@ function mudarEstilo() {
     elemento.style.backgroundColor = "pink"
     elemento.style.fontSize = "70px"
 }
-
 /*Exemplo 04 - classList.add  localiza o elemento desejado e insere uma classe HTML*/
-function destacar(){
+function destacar() {
     var elemento = document.getElementById("titulo02")
     elemento.classList.add("destaque")
+}
+
+function remover() {
+    var elemento = document.getElementById("titulo02")
+    elemento.classList.remove("destaque")
+}
+
+function alternar() {
+    var elemento = document.getElementById("titulo02")
+    elemento.classList.toggle("destaque")
 }
