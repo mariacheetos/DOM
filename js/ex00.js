@@ -44,3 +44,31 @@ function adicionarTexto() {
     var container = document.getElementById("container")
     container.appendChild(novo)
 }
+
+function removerTexto() {
+    var paragrafo = document.getElementById("paragrafo")
+    //teste para remover se somente tiver paragrafo
+    if (paragrafo) {
+        paragrafo.remove();
+    }
+    else {
+        alert("Não há texto para remover")
+    }
+}
+
+function removerTudo() {
+    var container = document.getElementById("container")
+    if (container) {
+        container.remove();
+    }
+    else {
+        alert("Não há texto para remover")
+    }
+}
+
+function colorir() {
+    var itens = document.querySelectorAll("p")
+    for (var i = 0; i < itens.length; i++) {
+        itens[i].style.color = "green"
+    }
+}
